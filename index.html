@@ -136,6 +136,20 @@ h2{font-family:'DM Serif Display',serif;font-size:clamp(28px,3.8vw,46px);line-he
 .cta-strip p{color:rgba(255,255,255,0.75);font-size:15px;line-height:1.7;margin-bottom:16px}
 .cta-btn{display:inline-block;background:var(--clay);color:var(--white);padding:11px 24px;border-radius:4px;font-weight:600;font-size:14px;text-decoration:none}
 
+
+/* TESTIMONIALS */
+.testimonials{background:var(--dark)}
+.testimonials .section-label{color:var(--gold)}
+.testimonials .section-label::before{background:var(--gold)}
+.testimonials h2{color:var(--white)}
+.testimonials-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.testimonial-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:32px 30px}
+.testimonial-quote{font-size:15px;color:rgba(255,255,255,0.7);line-height:1.85;font-style:italic;margin-bottom:24px}
+.testimonial-quote::before{content:'C';font-family:'DM Serif Display',serif;font-size:48px;color:var(--gold);line-height:0;vertical-align:-18px;margin-right:4px}
+.testimonial-author{font-size:14px;font-weight:600;color:var(--white)}
+.testimonial-role{font-size:13px;color:rgba(255,255,255,0.4);margin-top:3px}
+@media(max-width:768px){.testimonials-grid{grid-template-columns:1fr}}
+
 /* CONTACT */
 .contact{background:var(--dark)}
 .contact .section-label{color:var(--gold)}
@@ -213,6 +227,7 @@ footer{background:rgba(14,22,29,1);padding:32px 48px;display:flex;align-items:ce
   <a class="nav-logo" href="#hero">Wendy <span>Warrington</span></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
     <li><a href="#how">How I Help</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#ai-section">AI & Your Business</a></li>
@@ -226,6 +241,7 @@ footer{background:rgba(14,22,29,1);padding:32px 48px;display:flex;align-items:ce
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#testimonials" onclick="closeMenu()">Testimonials</a>
   <a href="#how" onclick="closeMenu()">How I Help</a>
   <a href="#services" onclick="closeMenu()">Services</a>
   <a href="#ai-section" onclick="closeMenu()">AI & Your Business</a>
@@ -312,6 +328,25 @@ footer{background:rgba(14,22,29,1);padding:32px 48px;display:flex;align-items:ce
         <strong>From idea to consulting ecosystem</strong>
         <p>Helped build the brand, services, creative assets, training tools, and a custom app for client engagement.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="section-label">What people say</div>
+  <h2>Heard from those who have worked alongside me.</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <p class="testimonial-quote">Wendy is a consummate professional able to lead and manage organizations through innumerable challenges and successes. Under her leadership, Sober Grid grew 40% year over year from 2019 to 2022 and achieved profitability in a highly fractured and evolving market. Wendy structured the organization to maximize efficiency and effectiveness and commands the respect of everyone who works with and for her. Her track record of operational excellence, efficiency, and accelerating growth purposefully is impeccable. Wendy is an indispensable leader and general manager combining finance, HR, and operations functional expertise with a remarkable presence that brings out the best in her teams. She would be a valuable asset to any C-suite or executive team in banking, digital health, manufacturing, or service sectors.</p>
+      <div class="testimonial-author">Nick F.</div>
+      <div class="testimonial-role">CFO, Sober Grid</div>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-quote">I had the good fortune to work with Wendy when she was with Monroe Bank & Trust. Wendy possesses many skills but one of her greatest strengths is the joint passion she shares for the employee and the client. At Monroe Bank & Trust, she helped create an excellent employee culture that easily transitioned to their clients. I worked with her in a branch of the future retail experience design role where she utilized her HR, retail strategy, and culture career talents to design the bank's branch of the future — including a $3M new build centered on merging the client experience with employee engagement. Wendy is intelligent, articulate, and committed. She understands the art and science of the client and employee experience. I would wholeheartedly recommend Wendy to any organization.</p>
+      <div class="testimonial-author">Joe W.</div>
+      <div class="testimonial-role">Account Executive, Verint</div>
     </div>
   </div>
 </section>
